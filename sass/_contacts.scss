@@ -1,0 +1,167 @@
+@use "_mixins" as *;
+@use "_fonts";
+@use "_reset";
+@use "_colors" as *;
+@use "_components" as *;
+@use "_typo" as *;
+
+.page {
+
+		// .page__contacts-hero
+
+		&__page-contacts {
+		}
+}
+.page-contacts {
+  font-family: "Roboto",sans-serif;
+	background-color: $background-affter;
+  // position: relative;
+
+		// .contacts__background
+
+		&__background {
+			z-index: 0;
+			height: 50%;
+		}
+
+		// .contacts__container
+
+		&__container {
+			position: relative;
+			z-index: 2;
+		}
+
+		// .contacts__title
+
+		&__title {
+      @include type("h1");
+		}
+
+		// .contacts__breadcrumbs
+
+		&__breadcrumbs {
+		}
+
+		// .contacts__sub-title
+
+		&__sub-title {
+      @include type("h-30");
+			max-width: toRem(1011);
+			margin-bottom: toRem(59);
+
+		}
+
+		// .contacts__list
+
+		&__list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(min(toRem(350),100%),0.35fr));
+      column-gap: toRem(16);
+      row-gap: toRem(40);
+			justify-content: center;
+
+			@media (width < toEm(1112)) {
+				grid-template-columns: 1fr 1fr;
+			}
+			@media (width < toEm(640)) {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		// .contacts__item
+
+		&__item {
+		}
+}
+
+.item-contacts {
+	display: flex;
+	flex-direction: column;
+  background-color: $white;
+  padding: toRem(20);
+	@media (width > toEm(1112)) {
+		padding: toRem(42) toRem(48) toRem(48) toRem(48);
+	}
+		// .item-contacts__title
+
+		&__title {
+      @include type("h-24");
+      margin-bottom: toRem(4);
+		}
+
+		// .item-contacts__text
+
+		&__text {
+      color: $description;
+      margin-bottom: toRem(26);
+      @include type("h-18");
+      max-width: toRem(280);
+      p:not(:last-child){
+        margin-bottom: toRem(10);
+      }
+		}
+
+		// .item-contacts__info
+
+		&__info {
+      display: flex;
+      flex-direction: column;
+      row-gap: toRem(23);
+      margin-bottom: toRem(37);
+		}
+
+		// .item-contacts__block
+
+		&__block {
+		}
+
+		// .item-contacts__subtitle
+
+		&__subtitle {
+      margin-bottom: toRem(5);
+      text-transform: uppercase;
+      color: $avaliable;
+      @include type("h-14");
+      font-weight: 700;
+		}
+
+		// .item-contacts__comunication
+
+		&__comunication {
+      @include type("h-18");
+			line-height: 1.66;
+		}
+
+		// .item-contacts__footer
+
+		&__footer {
+			margin-top:auto;
+      display: flex;
+      justify-content: space-between;
+      column-gap: toRem(15);
+      align-items: center;
+      flex-wrap: wrap;
+      row-gap: toRem(30);
+		}
+
+		// .item-contacts__link
+
+		&__link {
+		}
+
+		// .item-contacts__map
+
+		&__map {
+      @include type("h-18");
+		}
+}
+.button {
+}
+.swiper {
+
+		// .swiper__arrow
+
+		&__arrow {
+		}
+}
+

@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <base href="#" target="_blank" />
+    <title>Bussines</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__contact">
+          <div class="header__call-tol-ink">
+            <a
+              href="callto:08505447514"
+              class="header__help contact--mobile contact header__help--icon-Phone"
+            >
+              <div class="contact__call">
+                <span>Do you need help?</span>
+                <span>+0(850) 544 7514</span>
+              </div>
+            </a>
+            <button class="contact__close-button"></button>
+          </div>
+        </div>
+        <div class="header__header">
+          <div
+            class="header__help header__help--header header__help--icon-Phone contact contact--desktop"
+          >
+            <div class="contact__call">
+              <span>Do you need help?</span>
+              <span>+0(850) 544 7514</span>
+            </div>
+          </div>
+          <div class="header__block-logo">
+            <img
+              src="./img/logo/Logo-dark.svg"
+              alt="Logo"
+              class="header__logo"
+            />
+          </div>
+          <div class="header__socials">
+            <a
+              href="#"
+              class="header__social header__social--icon-linkedin"
+            ></a>
+            <a
+              href="#"
+              class="header__social header__social--icon-instagram"
+            ></a>
+            <a
+              href="#"
+              style="height: 15px"
+              class="header__social header__social--icon-twiter"
+            ></a>
+          </div>
+          <div class="header__leanguages leanguages-buttons">
+            <div class="leanguages-buttons__wrapper">
+              <button class="leanguages-buttons__button">
+                <img
+                  srcset="
+                    ./img/header/logo-uk-2x.png 1x,
+                    ./img/header/logo-uk-2x.png 2x,
+                    ./img/header/logo-uk-3x.png 3x
+                  "
+                  src="./img/header/logo-uk-2x.png"
+                  alt
+                  class="leanguages-buttons__img"
+                />
+                <div class="leanguages-buttons__text">
+                  <span>Language</span><span>English</span>
+                </div>
+              </button>
+              <button
+                class="leanguages-buttons__button leanguages-buttons__button--active"
+              >
+                <img
+                  srcset="
+                    ./img/header/logo-uk-2x.png 1x,
+                    ./img/header/logo-uk-2x.png 2x,
+                    ./img/header/logo-uk-3x.png 3x
+                  "
+                  src="./img/header/logo-uk-2x.png"
+                  alt
+                  class="leanguages-buttons__img"
+                />
+                <div class="leanguages-buttons__text">
+                  <span>Language</span><span>Ukranian</span>
+                </div>
+              </button>
+              <button class="leanguages-buttons__button">
+                <img
+                  srcset="
+                    ./img/header/logo-uk-2x.png 1x,
+                    ./img/header/logo-uk-2x.png 2x,
+                    ./img/header/logo-uk-3x.png 3x
+                  "
+                  src="./img/header/logo-uk-2x.png"
+                  alt
+                  class="leanguages-buttons__img"
+                />
+                <div class="leanguages-buttons__text">
+                  <span>Language</span><span>Another</span>
+                </div>
+              </button>
+              <button class="leanguages-buttons__button">
+                <img
+                  srcset="
+                    ./img/header/logo-uk-2x.png 1x,
+                    ./img/header/logo-uk-2x.png 2x,
+                    ./img/header/logo-uk-3x.png 3x
+                  "
+                  src="./img/header/logo-uk-2x.png"
+                  alt
+                  class="leanguages-buttons__img"
+                />
+                <div class="leanguages-buttons__text">
+                  <span>Language</span><span>English</span>
+                </div>
+              </button>
+            </div>
+          </div>
+          <button class="header__burger"><span></span></button>
+        </div>
+        <div class="header__main">
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item header-products">
+                <div class="header-products__body">
+                  <button class="header-products__button">Menu</button>
+                <a href="#" class="header-products__span"
+                  >Products
+                  <img
+                    src="./img/icons/arrow.svg"
+                    alt="arrow"
+                    class="header-products__img"
+                /></a>
+                </div>
+                <div class="header-products__wrappper">
+                  <ul class="header-products__list">
+                    <li class="header-products__item">
+                      <a href="#" class="header-products__link link">All</a>
+                    </li>
+                    <li class="header-products__item">
+                      <a href="#" class="header-products__link link">Item1</a>
+                    </li>
+                    <li class="header-products__item">
+                      <a href="#" class="header-products__link link">Item2</a>
+                    </li>
+                    <li class="header-products__item">
+                      <a href="#" class="header-products__link link">Item3</a>
+                    </li>
+                    <li class="header-products__item">
+                      <a href="#" class="header-products__link link">Item4</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link link">Solution</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link link"> Softwares </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link link">Services</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link link"> Corporate </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link link">News</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="page">
+        <section class="page__hero-about about-hero about-hero--nobackground hero-padding">
+          <div class="about-hero__background background background--whitening">
+            <img
+              srcset="
+                ./img/about-page/background-2x.jpg 1x,
+                ./img/about-page/background-2x.jpg 2x,
+                ./img/about-page/background-3x.jpg 3x
+              "
+              src="./img/about-page/background-2x.jpg"
+              alt="photo"
+            />
+          </div>
+          <div class="about-hero__container">
+            <h1 class="about-hero__title">About Us</h1>
+            <div class="about-hero__breadcrumbs breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a href="#" class="breadcrumbs__link">Home</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="#" class="breadcrumbs__link">Corporate</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <span class="breadcrumbs__current-page">About Crosson</span>
+                </li>
+              </ul>
+            </div>
+            <h3 class="about-hero__sub-title">
+              At the roots of Crosson, there is 20 years of experience in food
+              industry that is filled with research, increasing efficiency and
+              producing solution for <mark class="mark">food, quality,</mark>
+              <mark class="mark">automation and software.</mark>
+            </h3>
+            <div class="about-hero__text">
+              <p>
+                Donut candy shortbread toffee dragée apple pie brownie. Muffin
+                chocolate halvah bonbon gummies cake apple pie. Croissant
+                dessert candy canes chocolate bar topping jujubes cupcake toffee
+                dragée. Fruitcake danish tart gummies tootsie roll dragée
+                cheesecake jujubes. Fruitcake powder marzipan dessert dessert
+                oat cake candy. Sweet roll sweet roll gummi bears tootsie roll
+                dragée. Candy canes brownie danish pudding jelly gummies.
+              </p>
+              <p>
+                Toffee jelly caramels macaroon bonbon dragée muffin halvah.
+                Pudding icing gingerbread sugar plum powder marzipan. Cotton
+                candy carrot cake pastry carrot cake jelly danish. Ice cream
+                muffin marshmallow sesame snaps pie cupcake tart. Lemon drops
+                macaroon lemon drops chocolate cookie cupcake marshmallow donut.
+                Cotton candy candy canes cake oat cake jelly.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="page__values values">
+          <div class="values__container">
+            <h4 class="values__sub-title sub-title">WHO WE ARE</h4>
+            <div class="values__body">
+              <div class="values__description">
+                <h2 class="values__title">
+                  Crosson has adopted Quality Production as its
+                  <mark class="mark">basic principle.</mark>
+                </h2>
+                <div class="values__text">
+                  <p>
+                    To be one of the pioneering, dynamic and leading companies
+                    that offer quality products and services with an
+                    understanding of continuous improvement in the fields in
+                    which it operates.
+                  </p>
+                </div>
+                <a href="#" class="values__certificate-link"
+                  >Quality Certificates</a
+                >
+              </div>
+              <div class="values__cards">
+                <ul class="values__list">
+                  <li class="values__card">
+                    <div class="values__picture">
+                      <img
+                        srcset="
+                          ./img/about/how-2-2x.jpg 1x,
+                          ./img/about/how-2-2x.jpg 2x,
+                          ./img/about/how-2-3x.jpg 3x
+                        "
+                        src="./img/about/how-2-2x.jpg"
+                        alt="image"
+                        class="values__img"
+                      />
+                    </div>
+                    <h4 class="values__title-card">Our Mission</h4>
+                    <div class="values__text-card">
+                      <p>
+                        Center we have developped many patents in filling and
+                        packaging technology.
+                      </p>
+                    </div>
+                    <a href="#" class="values__link link-more link-more--black"
+                      >Read more
+                      <img
+                        src="./img/icons/arrow.svg"
+                        alt="arrow"
+                        class="link-more__icon"
+                    /></a>
+                  </li>
+                  <li class="values__card">
+                    <div class="values__picture">
+                      <img
+                        srcset="
+                          ./img/about/how-3-2x.jpg 1x,
+                          ./img/about/how-3-2x.jpg 2x,
+                          ./img/about/how-3-3x.jpg 3x
+                        "
+                        src="./img/about/how-3-2x.jpg"
+                        alt="image"
+                        class="values__img"
+                      />
+                    </div>
+                    <h4 class="values__title-card">Our Mission</h4>
+                    <div class="values__text-card">
+                      <p>
+                        Center we have developped many patents in filling and
+                        packaging technology.
+                      </p>
+                    </div>
+                    <a
+                      href="#"
+                      class="body-do-what__link link-more link-more--black"
+                      >Read more
+                      <img
+                        src="./img/icons/arrow.svg"
+                        alt="arrow"
+                        class="link-more__icon"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__partners partners">
+          <div class="partners__container">
+            <h4 class="partners__sub-title sub-title">PARTNERS</h4>
+            <div class="partners__header">
+              <h2 class="partners__title">
+                Ask our <mark class="mark">happy customers</mark> about our
+                quality
+              </h2>
+              <div class="partners__text">
+                <blockquote class="partners__quote">
+                  <p>
+                    To be one of the pioneering, dynamic and leading companies
+                    that offer quality products and services with an
+                    understanding of continuous improvement in the fields in
+                    which it operates.
+                  </p>
+                </blockquote>
+                <span class="partners__autor">Erkan Giris, EG Theme</span>
+              </div>
+            </div>
+            <div class="partners__main">
+              <div class="partners__body">
+                <ul class="partners__list">
+                  <li class="partners__item">
+                    <img
+                      srcset="
+                        ./img/clients/1-2x.jpg 1x,
+                        ./img/clients/1-2x.jpg 2x,
+                        ./img/clients/1-3x.jpg 3x
+                      "
+                      src="./img/clients/1-2x.jpg"
+                      alt="client-photo"
+                      class="partners__img-client"
+                    />
+                  </li>
+                  <li class="partners__item">
+                    <img
+                      srcset="
+                        ./img/clients/2-2x.jpg 1x,
+                        ./img/clients/2-2x.jpg 2x,
+                        ./img/clients/2-3x.jpg 3x
+                      "
+                      src="./img/clients/2-2x.jpg"
+                      alt="client-photo"
+                      class="partners__img-client"
+                    />
+                  </li>
+                  <li class="partners__item">
+                    <img
+                      srcset="
+                        ./img/clients/3-2x.jpg 1x,
+                        ./img/clients/3-2x.jpg 2x,
+                        ./img/clients/3-3x.jpg 3x
+                      "
+                      src="./img/clients/3-2x.jpg"
+                      alt="client-photo"
+                      class="partners__img-client"
+                    />
+                  </li>
+                  <li class="partners__item">
+                    <img
+                      srcset="
+                        ./img/clients/4-2x.jpg 1x,
+                        ./img/clients/4-2x.jpg 2x,
+                        ./img/clients/4-3x.jpg 3x
+                      "
+                      src="./img/clients/4-2x.jpg"
+                      alt="client-photo"
+                      class="partners__img-client"
+                    />
+                  </li>
+                  <li class="partners__item">
+                    <img
+                      srcset="
+                        ./img/clients/5-2x.jpg 1x,
+                        ./img/clients/5-2x.jpg 2x,
+                        ./img/clients/5-3x.jpg 3x
+                      "
+                      src="./img/clients/5-2x.jpg"
+                      alt="client-photo"
+                      class="partners__img-client"
+                    />
+                  </li>
+                  <li class="partners__item">
+                    <img
+                      srcset="
+                        ./img/clients/6-2x.jpg 1x,
+                        ./img/clients/6-2x.jpg 2x,
+                        ./img/clients/6-3x.jpg 3x
+                      "
+                      src="./img/clients/6-2x.jpg"
+                      alt="client-photo"
+                      class="partners__img-client"
+                    />
+                  </li>
+                  <li class="partners__item">
+                    <img
+                      srcset="
+                        ./img/clients/7-2x.jpg 1x,
+                        ./img/clients/7-2x.jpg 2x,
+                        ./img/clients/7-3x.jpg 3x
+                      "
+                      src="./img/clients/7-2x.jpg"
+                      alt="client-photo"
+                      class="partners__img-client"
+                    />
+                  </li>
+                  <li class="partners__item">
+                    <img
+                      srcset="
+                        ./img/clients/8-2x.jpg 1x,
+                        ./img/clients/8-2x.jpg 2x,
+                        ./img/clients/8-3x.jpg 3x
+                      "
+                      src="./img/clients/8-2x.jpg"
+                      alt="client-photo"
+                      class="partners__img-client"
+                    />
+                  </li>
+                  <li class="partners__item">
+                    <img
+                      srcset="
+                        ./img/clients/9-2x.jpg 1x,
+                        ./img/clients/9-2x.jpg 2x,
+                        ./img/clients/9-3x.jpg 3x
+                      "
+                      src="./img/clients/9-2x.jpg"
+                      alt="client-photo"
+                      class="partners__img-client"
+                    />
+                  </li>
+                  <li class="partners__item">
+                    <img
+                      srcset="
+                        ./img/clients/10-2x.jpg 1x,
+                        ./img/clients/10-2x.jpg 2x,
+                        ./img/clients/10-3x.jpg 3x
+                      "
+                      src="./img/clients/10-2x.jpg"
+                      alt="client-photo"
+                      class="partners__img-client"
+                    />
+                  </li>
+                  <li class="partners__item">
+                    <img
+                      srcset="
+                        ./img/clients/11-2x.jpg 1x,
+                        ./img/clients/11-2x.jpg 2x,
+                        ./img/clients/11-3x.jpg 3x
+                      "
+                      src="./img/clients/11-2x.jpg"
+                      alt="client-photo"
+                      class="partners__img-client"
+                    />
+                  </li>
+                  <li class="partners__item">
+                    <img
+                      srcset="
+                        ./img/clients/12-2x.jpg 1x,
+                        ./img/clients/12-2x.jpg 2x,
+                        ./img/clients/12-3x.jpg 3x
+                      "
+                      src="./img/clients/12-2x.jpg"
+                      alt="client-photo"
+                      class="partners__img-client"
+                    />
+                  </li>
+                  <li class="partners__item">
+                    <img
+                      srcset="
+                        ./img/clients/13-2x.jpg 1x,
+                        ./img/clients/13-2x.jpg 2x,
+                        ./img/clients/13-3x.jpg 3x
+                      "
+                      src="./img/clients/13-2x.jpg"
+                      alt="client-photo"
+                      class="partners__img-client"
+                    />
+                  </li>
+                  <li class="partners__item">
+                    <img
+                      srcset="
+                        ./img/clients/23-2x.jpg 1x,
+                        ./img/clients/23-2x.jpg 2x,
+                        ./img/clients/23-3x.jpg 3x
+                      "
+                      src="./img/clients/23-2x.jpg"
+                      alt="client-photo"
+                      class="partners__img-client"
+                    />
+                  </li>
+                  <li class="partners__item">
+                    <img
+                      srcset="
+                        ./img/clients/15-2x.jpg 1x,
+                        ./img/clients/15-2x.jpg 2x,
+                        ./img/clients/15-3x.jpg 3x
+                      "
+                      src="./img/clients/15-2x.jpg"
+                      alt="client-photo"
+                      class="partners__img-client"
+                    />
+                  </li>
+                  <li class="partners__item">
+                    <img
+                      srcset="
+                        ./img/clients/16-2x.jpg 1x,
+                        ./img/clients/16-2x.jpg 2x,
+                        ./img/clients/16-3x.jpg 3x
+                      "
+                      src="./img/clients/16-2x.jpg"
+                      alt="client-photo"
+                      class="partners__img-client"
+                    />
+                  </li>
+                  <li class="partners__item">
+                    <img
+                      srcset="
+                        ./img/clients/17-2x.jpg 1x,
+                        ./img/clients/17-2x.jpg 2x,
+                        ./img/clients/17-3x.jpg 3x
+                      "
+                      src="./img/clients/17-2x.jpg"
+                      alt="client-photo"
+                      class="partners__img-client"
+                    />
+                  </li>
+                  <li class="partners__item">
+                    <img
+                      srcset="
+                        ./img/clients/18-2x.jpg 1x,
+                        ./img/clients/18-2x.jpg 2x,
+                        ./img/clients/18-3x.jpg 3x
+                      "
+                      src="./img/clients/18-2x.jpg"
+                      alt="client-photo"
+                      class="partners__img-client"
+                    />
+                  </li>
+                  <li class="partners__item">
+                    <img
+                      srcset="
+                        ./img/clients/19-2x.jpg 1x,
+                        ./img/clients/19-2x.jpg 2x,
+                        ./img/clients/19-3x.jpg 3x
+                      "
+                      src="./img/clients/19-2x.jpg"
+                      alt="client-photo"
+                      class="partners__img-client"
+                    />
+                  </li>
+                  <li class="partners__item">
+                    <img
+                      srcset="
+                        ./img/clients/20-2x.jpg 1x,
+                        ./img/clients/20-2x.jpg 2x,
+                        ./img/clients/20-3x.jpg 3x
+                      "
+                      src="./img/clients/20-2x.jpg"
+                      alt="client-photo"
+                      class="partners__img-client"
+                    />
+                  </li>
+                  <li class="partners__item">
+                    <img
+                      srcset="
+                        ./img/clients/21-2x.jpg 1x,
+                        ./img/clients/21-2x.jpg 2x,
+                        ./img/clients/21-3x.jpg 3x
+                      "
+                      src="./img/clients/21-2x.jpg"
+                      alt="client-photo"
+                      class="partners__img-client"
+                    />
+                  </li>
+                  <li class="partners__stay-partner">
+                    <a href="#" class="partners__link">
+                      <div class="partners__wrapper">
+                        <div class="partners__face-span">Become a Partner</div>
+                        <div class="partners__backface-span">click</div>
+                      </div></a
+                    >
+                  </li>
+                </ul>
+                  <ul id="second-list" aria-hidden="true" class="partners__list">
+                    
+                </ul>
+                <!-- <ul aria-hidden="true" class="partners__neighbor-list"></ul> -->
+              </div>
+              <div class="partners__get-parnter"></div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <div class="footer__background background">
+            <img
+              srcset="
+                ./img/footer/footer-background-2x.jpg 1x,
+                ./img/footer/footer-background-2x.jpg 2x,
+                ./img/footer/footer-background-3x.jpg 3x
+              "
+              src="./img/footer/footer-background-2x.jpg"
+              alt="photo"
+            />
+          </div>
+          <div class="footer__container">
+            <div class="footer__header header-footer">
+              <h2 class="header-footer__title">
+                Have a <mark class="mark">any questions?</mark><br />Contact Us
+              </h2>
+              <adress class="header-footer__contacts">
+                <div
+                  class="header-footer__contact contact--icon-Phone contact contact--footer"
+                >
+                  <div class="contact__call">
+                    <span>Do you need help?</span>
+                    <span>+0(850) 544 7514</span>
+                  </div>
+                </div>
+                <div
+                  class="header-footer__contact contact--icon-envelope contact"
+                >
+                  <div class="contact__call">
+                    <span>E-Mail Address</span>
+                    <span>hello@crosson.com</span>
+                  </div>
+                </div>
+                <div
+                  class="header-footer__contact contact--icon-location contact contact--footer"
+                >
+                  <div class="contact__call">
+                    <span>Do you need help?</span>
+                    <span>One Apple Park Way; Cupertino CA 95014, U.S.A.</span>
+                    <a href="#" class="contact__link">Get Direction</a>
+                  </div>
+                </div>
+              </adress>
+            </div>
+            <div class="footer__body">
+              <div class="footer__columns">
+                <div class="footer__column">
+                  <h3 class="footer__title title-footer">
+                    <button class="footer__button">
+                      Products <img src="./img/icons/arrow.svg" alt="arrow" />
+                    </button>
+                  </h3>
+                  <ul class="footer__list">
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">Filling Machines</a>
+                    </li>
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">Filling Machines</a>
+                    </li>
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">Filling Machines</a>
+                    </li>
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">Filling Machines</a>
+                    </li>
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">Filling Machines</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__column">
+                  <h3 class="footer__title title-footer">
+                    <button class="footer__button">
+                      Solutions <img src="./img/icons/arrow.svg" alt="arrow" />
+                    </button>
+                  </h3>
+                  <ul class="footer__list">
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">Filling Machines</a>
+                    </li>
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">Filling Machines</a>
+                    </li>
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">Filling Machines</a>
+                    </li>
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">Filling Machines</a>
+                    </li>
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">Filling Machines</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__column">
+                  <h3 class="footer__title title-footer">
+                    <button class="footer__button">
+                      Corporate <img src="./img/icons/arrow.svg" alt="arrow" />
+                    </button>
+                  </h3>
+                  <ul class="footer__list">
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">About Us</a>
+                    </li>
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">Our Values</a>
+                    </li>
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">Human Resurses</a>
+                    </li>
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">News</a>
+                    </li>
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__oportunities oportunities">
+                <div class="oportunities__picture">
+                  <img
+                    src="./img/contant-icons/footer-icon.svg"
+                    alt="icon"
+                    class="oportunities__icon"
+                  />
+                </div>
+                <div class="oportunities__body">
+                  <h3 class="oportunities__title title-footer">
+                    Career Opportunities
+                  </h3>
+                  <div class="oportunities__text">
+                    <p>
+                      Cake pudding lollipop pastry cupcake chocolate. Gummi
+                      bears halvah sesame snaps.
+                    </p>
+                  </div>
+                  <a href="#" class="oportunities__link button"
+                    ><span class="button__span">Opennig Positions</span
+                    ><img
+                      src="./img/icons/arrow.svg"
+                      alt="arrow"
+                      class="swiper__arrow"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__footer footer-bottom">
+          <div class="footer-bottom__container">
+            <div class="footer-bottom__item">
+              <span class="footer-bottom__span">
+                Copyright by Erkan Giris
+              </span>
+              <span class="footer-bottom__span">
+                Copyright by Erkan Giris
+              </span>
+            </div>
+            <div class="footer-bottom__item">
+              <span class="footer-bottom__span">
+                Our Privacy and Personal Data Protection Policy 
+              </span>
+              <span class="footer-bottom__span">
+                Terms and Conditions of Use
+              </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

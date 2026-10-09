@@ -1,0 +1,380 @@
+@use "_mixins" as *;
+@use "_fonts";
+@use "_reset";
+@use "_colors" as *;
+@use "_typo" as *;
+
+.link {
+  position: relative;
+  &::after {
+    content: "";
+    transition:
+      width 0.3s,
+      left 0.3s;
+    position: absolute;
+    bottom: toRem(-3);
+    height: toRem(3);
+    width: 0;
+    background-color: $black;
+    left: 50%;
+  }
+  html:not([data-fls-touch]) & {
+    &:hover::after {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+
+.contact {
+  &:not(:last-of-type) {
+    margin-bottom: toRem(19);
+  }
+  &__close-button {
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: -10%;
+    height: toRem(20);
+    width: toRem(20);
+    border-radius: 50%;
+    background-color: $white;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: toRem(2);
+      background-color: $black;
+      left: 0;
+      translate: 0 toRem(-1);
+      rotate: 45deg;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: toRem(2);
+      translate: 0 toRem(-1);
+      left: 0;
+      background-color: $black;
+      rotate: -45deg;
+    }
+  }
+  display: flex;
+  align-items: flex-start;
+  column-gap: toRem(10);
+  font-family: "Inter", sans-serif;
+  &--mobile {
+    padding: toRem(20);
+    border: toRem(1) solid $description;
+    border-radius: toRem(30);
+    background-color: $white;
+  }
+  &--desktop {
+    @media (width < toEm(656)) {
+      display: none;
+    }
+  }
+  span {
+    max-width: toRem(248);
+    line-height: 1.2;
+    &:not(:last-child) {
+      margin-bottom: toRem(1);
+    }
+    &:nth-child(1) {
+      font-size: toRem(12);
+    }
+    display: block;
+  }
+  &::before {
+    font-size: toRem(26);
+  }
+  &__person {
+    margin-bottom: toRem(3);
+    display: flex;
+    span:nth-child(1) {
+      @include type("min");
+      font-weight: 600;
+      line-height: 1;
+    }
+    span:not(:last-child) {
+      &::after {
+        content: "";
+        margin-inline: toRem(3);
+        rotate: 15deg;
+        height: toRem(7);
+        width: toRem(1);
+        background-color: $black;
+      }
+    }
+    span {
+      @include type("min");
+      line-height: 1;
+      &:not(:last-child) {
+        margin-bottom: toRem(1);
+      }
+      display: block;
+    }
+  }
+
+}
+
+.mark {
+  z-index: 2;
+  display: inline-block;
+  min-width: max-content;
+  background-color: transparent;
+  position: relative;
+  &::after {
+    content: "";
+    left: -1%;
+    z-index: -4;
+    bottom: toRem(4);
+    position: absolute;
+    height: toRem(10);
+    width: 102%;
+    background-color: $yellow;
+  }
+  &--hero {
+    &::after {
+      bottom: toRem(8);
+    }
+    @media (width < toEm(363)) {
+      display: block;
+      width: max-content;
+    }
+  }
+}
+
+.button {
+  text-transform: capitalize;
+  display: flex;
+  column-gap: toRem(20);
+  justify-content: space-between;
+  padding-left: toRem(30);
+  padding-right: toRem(21);
+  background-color: $yellow;
+  padding-block: toRem(13);
+  border-radius: toRem(4);
+  max-width: max-content;
+  @include type("min");
+  min-width: toRem(220);
+  transition: background-color 0.3s;
+  html:not([data-fls-touch]) & {
+    &:hover {
+      background-color: #d2b816;
+    }
+  }
+}
+
+.sub-title {
+  font-weight: 700;
+  @include type("h-20");
+  color: $sub-title;
+  text-transform: uppercase;
+}
+
+.link-underline {
+  text-decoration: underline;
+  @include type("min");
+  html:not([data-fls-touch]) &{
+      &:hover{
+        color: rgb(189, 189, 29);
+      }
+    }
+}
+
+.link-more {
+  @include type("h-18");
+  max-width: max-content;
+
+  img {
+    margin-top: toRem(1);
+    max-width:  toRem(6);
+    aspect-ratio:3.72 / 7.45;
+    object-fit: contain;
+    display: block;
+  }
+
+  display: flex;
+  column-gap: toRem(16);
+  align-items: center;
+  color: $blue;
+  font-weight: 600;
+
+  &--black {
+    color: $black;
+    font-weight: 400;
+  }
+
+  html:not([data-fls-touch]) & {
+    &:hover {
+      text-decoration: underline;
+    }
+  } 
+}
+
+.scroll {
+  display: none;
+  @media (width < toEm(1000)) {
+    display: flex;
+  }
+  width: toRem(200);
+  background-color: #9f9f9f;
+  overflow: hidden; 
+  column-gap: toRem(20);
+  padding: toRem(20);
+  position: relative;
+  margin-bottom: toRem(20);
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    translate: -50% -50%;
+    top: 50%;
+    opacity: 0.3;
+    width: toRem(30);
+    height: toRem(30);
+    background: url('../img/contant-icons/finger.svg') no-repeat;
+    background-size: cover;
+    animation-name: fromTop;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+		// .scroll__item
+
+		&__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      height: toRem(50);
+      width: toRem(40);
+      @include type("h-14");
+      background-color: $background;
+      animation-name: toLeft;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-delay:3s;
+      border-radius: toRem(4);
+		}
+}
+
+
+@keyframes toLeft {
+  0%{
+    translate: 0% 0%;
+  }
+
+  100% {
+    translate: -150% 0%;
+  }
+
+}
+
+@keyframes fromTop {
+  0% {
+    top :0;
+    opacity: 0.8;
+    scale: 0.6;
+    
+  }
+
+  25% {
+    scale: 0.6;
+    top: 50%;
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+    scale: 0.8;
+    top: 50%;
+  }
+
+
+  75%{
+    top: 50%;
+    scale: 0.6;
+    left: 50%;
+    opacity: 1;
+  }
+
+  100% {
+    scale: 0.6;
+    top: 50%;
+    left: 25%;
+    opacity: 1;
+  }
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    object-fit: cover;
+    &--whitening{
+      &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: $background-affter;
+      top: 0;
+      left: 0;
+      opacity: 0.9;
+    }
+  }
+    img {
+      background-color: $border;
+      display: block; 
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+}
+
+.breadcrumbs {
+  @include adaptiveValue("margin-bottom", 61, 40);
+		// .breadcrumbs__list
+
+		&__list {
+      align-items: flex-end;
+      display: flex; 
+      flex-wrap: wrap;
+      row-gap: toRem(20);
+		}
+
+		// .breadcrumbs__item
+
+		&__item {
+      @include type("h-14");
+      &:not(:last-child) {
+        &::after {
+          content: '';
+          width: toRem(12);
+          height: toRem(8);
+          background: url('../img/icons/arrow.svg') no-repeat;
+          background-size: contain;
+          @include adaptiveValue("margin-inline", 20, 10);
+        }
+      }
+		}
+
+    &__current-page {
+      font-weight: 600;
+      user-select: none;
+    }
+		// .breadcrumbs__link
+
+		&__link {
+      html:not([data-fls-touch]) &{
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+		}
+}

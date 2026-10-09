@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <base href="#" target="_blank" />
+    <title>Bussines</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__contact">
+          <div class="header__call-tol-ink">
+            <a
+              href="callto:08505447514"
+              class="header__help contact--mobile contact header__help--icon-Phone"
+            >
+              <div class="contact__call">
+                <span>Do you need help?</span>
+                <span>+0(850) 544 7514</span>
+              </div>
+            </a>
+            <button class="contact__close-button"></button>
+          </div>
+        </div>
+        <div class="header__header">
+          <div
+            class="header__help header__help--header header__help--icon-Phone contact contact--desktop"
+          >
+            <div class="contact__call">
+              <span>Do you need help?</span>
+              <span>+0(850) 544 7514</span>
+            </div>
+          </div>
+          <div class="header__block-logo">
+            <img
+              src="./img/logo/Logo-dark.svg"
+              alt="Logo"
+              class="header__logo"
+            />
+          </div>
+          <div class="header__socials">
+            <a
+              href="#"
+              class="header__social header__social--icon-linkedin"
+            ></a>
+            <a
+              href="#"
+              class="header__social header__social--icon-instagram"
+            ></a>
+            <a
+              href="#"
+              style="height: 15px"
+              class="header__social header__social--icon-twiter"
+            ></a>
+          </div>
+          <div class="header__leanguages leanguages-buttons">
+            <div class="leanguages-buttons__wrapper">
+              <button class="leanguages-buttons__button">
+                <img
+                  srcset="
+                    ./img/header/logo-uk-2x.png 1x,
+                    ./img/header/logo-uk-2x.png 2x,
+                    ./img/header/logo-uk-3x.png 3x
+                  "
+                  src="./img/header/logo-uk-2x.png"
+                  alt
+                  class="leanguages-buttons__img"
+                />
+                <div class="leanguages-buttons__text">
+                  <span>Language</span><span>English</span>
+                </div>
+              </button>
+              <button
+                class="leanguages-buttons__button leanguages-buttons__button--active"
+              >
+                <img
+                  srcset="
+                    ./img/header/logo-uk-2x.png 1x,
+                    ./img/header/logo-uk-2x.png 2x,
+                    ./img/header/logo-uk-3x.png 3x
+                  "
+                  src="./img/header/logo-uk-2x.png"
+                  alt
+                  class="leanguages-buttons__img"
+                />
+                <div class="leanguages-buttons__text">
+                  <span>Language</span><span>Ukranian</span>
+                </div>
+              </button>
+              <button class="leanguages-buttons__button">
+                <img
+                  srcset="
+                    ./img/header/logo-uk-2x.png 1x,
+                    ./img/header/logo-uk-2x.png 2x,
+                    ./img/header/logo-uk-3x.png 3x
+                  "
+                  src="./img/header/logo-uk-2x.png"
+                  alt
+                  class="leanguages-buttons__img"
+                />
+                <div class="leanguages-buttons__text">
+                  <span>Language</span><span>Another</span>
+                </div>
+              </button>
+              <button class="leanguages-buttons__button">
+                <img
+                  srcset="
+                    ./img/header/logo-uk-2x.png 1x,
+                    ./img/header/logo-uk-2x.png 2x,
+                    ./img/header/logo-uk-3x.png 3x
+                  "
+                  src="./img/header/logo-uk-2x.png"
+                  alt
+                  class="leanguages-buttons__img"
+                />
+                <div class="leanguages-buttons__text">
+                  <span>Language</span><span>English</span>
+                </div>
+              </button>
+            </div>
+          </div>
+          <button class="header__burger"><span></span></button>
+        </div>
+        <div class="header__main">
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item header-products">
+                <div class="header-products__body">
+                  <button class="header-products__button">Menu</button>
+                <a href="#" class="header-products__span"
+                  >Products
+                  <img
+                    src="./img/icons/arrow.svg"
+                    alt="arrow"
+                    class="header-products__img"
+                /></a>
+                </div>
+                <div class="header-products__wrappper">
+                  <ul class="header-products__list">
+                    <li class="header-products__item">
+                      <a href="#" class="header-products__link link">All</a>
+                    </li>
+                    <li class="header-products__item">
+                      <a href="#" class="header-products__link link">Item1</a>
+                    </li>
+                    <li class="header-products__item">
+                      <a href="#" class="header-products__link link">Item2</a>
+                    </li>
+                    <li class="header-products__item">
+                      <a href="#" class="header-products__link link">Item3</a>
+                    </li>
+                    <li class="header-products__item">
+                      <a href="#" class="header-products__link link">Item4</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link link">Solution</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link link"> Softwares </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link link">Services</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link link"> Corporate </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link link">News</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="page">
+        <section
+          class="page__page-contacts page-contacts page-contacts--nobackground"
+        >
+          <div class="page-contacts__background background background--whitening">
+            <img
+              srcset="
+                ./img/about-page/background-2x.jpg 1x,
+                ./img/about-page/background-2x.jpg 2x,
+                ./img/about-page/background-3x.jpg 3x
+              "
+              src="./img/about-page/background-2x.jpg"
+              alt="bakground"
+            />
+          </div>
+          <div class="page-contacts__container">
+            <h1 class="page-contacts__title">Contact Us</h1>
+            <div class="page-contacts__breadcrumbs breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a href="#" class="breadcrumbs__link">Home</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <span class="breadcrumbs__current-page">Contact Us</span>
+                </li>
+              </ul>
+            </div>
+            <h3 class="page-contacts__sub-title">
+              Interested in our<mark class="mark">Machine & Software</mark
+              >services or need advice? Then please get in touch and we’ll be
+              glad to help.
+            </h3>
+            <ul class="page-contacts__list">
+              <li class="page-contacts__item item-contacts">
+                <h3 class="item-contacts__title">Contact Informations</h3>
+                <div class="item-contacts__text">
+                  <p>Get in touch and let us know how we can help</p>
+                </div>
+                <adress class="item-contacts__info">
+                  <div class="item-contacts__block">
+                    <h4 class="item-contacts__subtitle">Phone</h4>
+                    <span class="item-contacts__comunication"
+                      >+0(850) 544 7514</span
+                    >
+                  </div>
+                  <div class="item-contacts__block">
+                    <h4 class="item-contacts__subtitle">Mail</h4>
+                    <span class="item-contacts__comunication"
+                      >hello@crosson.com</span
+                    >
+                  </div>
+                  <div class="item-contacts__block">
+                    <h4 class="item-contacts__subtitle">Adress</h4>
+                    <span class="item-contacts__comunication"
+                      >One Apple Park Way; Cupertino CA 95014, U.S.A.</span
+                    >
+                  </div>
+                </adress>
+                <div class="item-contacts__footer">
+                  <a href="Get Direction" class="item-contacts__link button"
+                    >get direction<img
+                      src="./img/icons/arrow.svg"
+                      alt="arrow"
+                      class="swiper__arrow"
+                  /></a>
+                  <a href="https://maps.app.goo.gl/Emx14RrezFg6Qsd27" class="item-contacts__map link-underline">See on Map</a>
+                </div>
+              </li>
+              <li class="contacts__item item-contacts">
+                <h3 class="item-contacts__title">Technical Support</h3>
+                <div class="item-contacts__text">
+                  <p>You can reach our technical support team 24/7</p>
+                </div>
+                <adress class="item-contacts__info">
+                  <div class="item-contacts__block">
+                    <h4 class="item-contacts__subtitle">SUPPORT PHONE</h4>
+                    <span class="item-contacts__comunication"
+                      >+0(850) 544 7514</span
+                    >
+                  </div>
+                  <div class="item-contacts__block">
+                    <h4 class="item-contacts__subtitle">SUPPORT MAIL</h4>
+                    <span class="item-contacts__comunication"
+                      >hello@crosson.com</span
+                    >
+                  </div>
+                  <div class="item-contacts__block">
+                    <h4 class="item-contacts__subtitle">SUPPORT REQUEST FORM</h4>
+                    <span class="item-contacts__comunication"
+                      >Caramels cake marshmallow cheesecake shortbread soufflé.</span
+                    >
+                  </div>
+                </adress>
+                <div class="item-contacts__footer">
+                  <a href="Get Direction" class="item-contacts__link button"
+                    >get direction<img
+                      src="./img/icons/arrow.svg"
+                      alt="arrow"
+                      class="swiper__arrow"
+                  /></a>
+                </div>
+              </li>
+              <li class="contacts__item item-contacts">
+                <h3 class="item-contacts__title">Satisfaction Survey</h3>
+                <div class="item-contacts__text">
+                  <p>Use the "Service Evaluation" code to make an evaluation</p>
+                </div>
+                <adress class="item-contacts__info">
+                  <div class="item-contacts__block">
+                    <h4 class="item-contacts__subtitle">WHERE IS MY CODE?</h4>
+                    <span class="item-contacts__comunication"
+                      >The Service Evaluation code will be provided after the service is performed by the technical team.</span
+                    >
+                  </div>
+                  <div class="item-contacts__block">
+                    <h4 class="item-contacts__subtitle">Mail</h4>
+                    <span class="item-contacts__comunication"
+                      >hello@crosson.com</span
+                    >
+                  </div>
+                </adress>
+                <div class="item-contacts__footer">
+                  <a href="#" class="item-contacts__link button"
+                    >get direction<img
+                      src="./img/icons/arrow.svg"
+                      alt="arrow"
+                      class="swiper__arrow"
+                  /></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <div class="footer__background background">
+                      <img
+            srcset="
+              ./img/footer/footer-background-2x.jpg 1x,
+              ./img/footer/footer-background-2x.jpg 2x,
+              ./img/footer/footer-background-3x.jpg 3x
+            "
+            src="./img/footer/footer-background-2x.jpg"
+            alt="photo"
+          />
+          </div>
+          <div class="footer__container">
+            <div class="footer__header header-footer">
+              <h2 class="header-footer__title">
+                Have a <mark class="mark">any questions?</mark><br />Contact Us
+              </h2>
+              <adress class="header-footer__contacts">
+                <div
+                  class="header-footer__contact contact--icon-Phone contact contact--footer"
+                >
+                  <div class="contact__call">
+                    <span>Do you need help?</span>
+                    <span>+0(850) 544 7514</span>
+                  </div>
+                </div>
+                <div
+                  class="header-footer__contact contact--icon-envelope contact"
+                >
+                  <div class="contact__call">
+                    <span>E-Mail Address</span>
+                    <span>hello@crosson.com</span>
+                  </div>
+                </div>
+                <div
+                  class="header-footer__contact contact--icon-location contact contact--footer"
+                >
+                  <div class="contact__call">
+                    <span>Do you need help?</span>
+                    <span>One Apple Park Way; Cupertino CA 95014, U.S.A.</span>
+                    <a href="#" class="contact__link">Get Direction</a>
+                  </div>
+                </div>
+              </adress>
+            </div>
+            <div class="footer__body">
+              <div class="footer__columns">
+                <div class="footer__column">
+                  <h3 class="footer__title title-footer">
+                    <button class="footer__button">
+                      Products <img src="./img/icons/arrow.svg" alt="arrow" />
+                    </button>
+                  </h3>
+                  <ul class="footer__list">
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">Filling Machines</a>
+                    </li>
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">Filling Machines</a>
+                    </li>
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">Filling Machines</a>
+                    </li>
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">Filling Machines</a>
+                    </li>
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">Filling Machines</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__column">
+                  <h3 class="footer__title title-footer">
+                    <button class="footer__button">
+                      Solutions <img src="./img/icons/arrow.svg" alt="arrow" />
+                    </button>
+                  </h3>
+                  <ul class="footer__list">
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">Filling Machines</a>
+                    </li>
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">Filling Machines</a>
+                    </li>
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">Filling Machines</a>
+                    </li>
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">Filling Machines</a>
+                    </li>
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">Filling Machines</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__column">
+                  <h3 class="footer__title title-footer">
+                    <button class="footer__button">
+                      Corporate <img src="./img/icons/arrow.svg" alt="arrow" />
+                    </button>
+                  </h3>
+                  <ul class="footer__list">
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">About Us</a>
+                    </li>
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">Our Values</a>
+                    </li>
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">Human Resurses</a>
+                    </li>
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">News</a>
+                    </li>
+                    <li class="footer__info">
+                      <a href="#" class="footer__link">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__oportunities oportunities">
+                <div class="oportunities__picture">
+                  <img
+                    src="./img/contant-icons/footer-icon.svg"
+                    alt="icon"
+                    class="oportunities__icon"
+                  />
+                </div>
+                <div class="oportunities__body">
+                  <h3 class="oportunities__title title-footer">
+                    Career Opportunities
+                  </h3>
+                  <div class="oportunities__text">
+                    <p>
+                      Cake pudding lollipop pastry cupcake chocolate. Gummi
+                      bears halvah sesame snaps.
+                    </p>
+                  </div>
+                  <a href="#" class="oportunities__link button"
+                    ><span class="button__span">Opennig Positions</span
+                    ><img
+                      src="./img/icons/arrow.svg"
+                      alt="arrow"
+                      class="swiper__arrow"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__footer footer-bottom">
+          <div class="footer-bottom__container">
+            <div class="footer-bottom__item">
+              <span class="footer-bottom__span">
+                Copyright by Erkan Giris
+              </span>
+              <span class="footer-bottom__span">
+                Copyright by Erkan Giris
+              </span>
+            </div>
+            <div class="footer-bottom__item">
+              <span class="footer-bottom__span">
+                Copyright by Erkan Giris
+              </span>
+              <span class="footer-bottom__span">
+                Copyright by Erkan Giris
+              </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
