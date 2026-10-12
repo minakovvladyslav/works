@@ -209,18 +209,23 @@ background-color: #F1F1F1;
 		// .companies__list
 		&__body {
 			@media (width < toRem(800)) {
-				pointer-events: none;html:not([data-fls-touch]) &{
-						&:hover &__list{
-							animation-play-state: paused;
-						}
-					}
 				margin-inline: toRem(-15);
 				padding-inline: toRem(15);
 				display: flex;
 				overflow: auto;
+				overscroll-behavior: none;
+				overflow: hidden;
 				&::-webkit-scrollbar {
         	display: none;
       	}
+				html:not([data-fls-touch]) &{
+					&:hover{
+						touch-action: none;
+						.companies__list {
+							animation-play-state: paused;
+						}
+					}
+				}
 			}
 		}
 
@@ -234,7 +239,7 @@ background-color: #F1F1F1;
 			@media (width < toEm(800)) {
 				grid-template-columns: repeat(6, toRem(220));
 				animation-name: spin-two;
-				animation-duration: 6s;
+				animation-duration: 10s;
 				animation-iteration-count: infinite;
 				animation-timing-function: linear;
 			}

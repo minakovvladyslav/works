@@ -13,11 +13,12 @@
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  [open-form] &{
+
+  [data-hide-content] & {
     overflow: hidden;
   }
 
-  [data-hide-content] &{
+  &[data-open-burger]{
     overflow: hidden;
   }
 }
@@ -29,7 +30,12 @@ body {
 }
 
 main {
-  transition: opacity 0.7s;
+  [data-hide-content] & {
+    transform: translate(5%, 0%);
+    opacity: 0;
+  }
+
+  transition: transform 0.7s, opacity 0.7s;
 }
 
 .header {
@@ -142,7 +148,7 @@ main {
       padding-top: toRem(20);
       width: 100%;
       padding-inline: toRem(10);
-      padding-bottom: toRem(50);
+      padding-bottom: toRem(90);
       height: 100vh;
       background-color: $border;
       overflow: auto;
@@ -152,7 +158,7 @@ main {
       flex-direction: column;
       row-gap: toRem(20);
     }
-    [open-burger] & {
+    [data-open-burger] & {
       left: 0;
     }
   }
@@ -202,7 +208,7 @@ main {
 
     &::before {
       top: 0;
-      [open-burger] & {
+      [data-open-burger] & {
         transform: rotateZ(45deg) translate(0%, -50%);
         top: 50%;
       }
@@ -210,7 +216,7 @@ main {
 
     &::after {
       bottom: 0;
-      [open-burger] & {
+      [data-open-burger] & {
         transform: rotateZ(-45deg) translate(0%, 50%);
         bottom: 50%;
       }
@@ -221,7 +227,7 @@ main {
       display: block;
       background-color: $black;
       transition: width 0.3s;
-      [open-burger] & {
+      [data-open-burger] & {
         width: 0;
       }
     }

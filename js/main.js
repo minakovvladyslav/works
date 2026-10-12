@@ -58,12 +58,11 @@ function load() {
 
   function initDocumnet() {
     if (document.querySelector(`.preloader`)) {
-      document.querySelector(`main`).style.opacity = `0`
       document.querySelector(`.preloader__item`).classList.add(`hide`);
       document.addEventListener(`preloaderCLose`, () => {
-        document.querySelector(`.preloader__button`).style.display = `block`
         const spanElement = document.querySelector(`.preloader span`);
-        if (spanElement) {
+        if(document.querySelector(`.preloader__button`) && spanElement) {
+          document.querySelector(`.preloader__button`).style.display = `block`
           const typed = new Typed(`.preloader span`, {
             strings: [`We are the Best!`,`We have evething!`, `Crossone`],
             typeSpeed: 30,
@@ -73,10 +72,13 @@ function load() {
               setTimeout(() => {
                 document.documentElement.removeAttribute(`data-hide-content`);
                 document.querySelector(`.preloader`).style.display = `none`
-                document.querySelector(`main`).style.opacity = `1`
               },1500)
             }
           });
+        } else {
+          document.documentElement.removeAttribute(`data-hide-content`);
+          document.querySelector(`.preloader`).style.display = `none`
+          document.querySelector(`main`).style.transform = ``
         }
       });
     }
@@ -131,10 +133,6 @@ function load() {
       setList();
       function setList() {
         const linkElement = document.querySelector(`.partners__link`);
-        if (!matchMedia.matches && linkElement && neighborList) {
-          neighborList.style.animation = ``;
-          mainListElement.style.animation = ``;
-        }
         if (matchMedia.matches && linkElement && neighborList) {
           const mainListElements =
             mainListElement.querySelectorAll(`.partners__item`);
@@ -152,15 +150,6 @@ function load() {
               neighborList.insertAdjacentElement("beforeend", itemClone);
               neighborList.setAttribute(`items`, ``);
             });
-          }
-          if (
-            mainListElements.length ==
-            neighborList.querySelectorAll(`.partners__item`).length
-          ) {
-            neighborList.offsetWidth;
-            neighborList.style.animation = `spin 17s linear infinite`;
-            mainListElement.offsetWidth;
-            mainListElement.style.animation = `spin 17s linear infinite`;
           }
         }
       }
@@ -388,13 +377,13 @@ function load() {
         const buttonElementsHeight = buttonElements[0].offsetHeight;
         if (
           headerLeanguageElement &&
-          !document.querySelector(`body`).hasAttribute(`open-burger`)
+          !document.querySelector(`body`).hasAttribute(`data-open-burger`)
         ) {
           headerLeanguageElement.classList.toggle(`open`);
         }
         if (
           headerLeanguageElement.classList.contains(`open`) &&
-          !document.querySelector(`body`).hasAttribute(`open-burger`)
+          !document.querySelector(`body`).hasAttribute(`data-open-burger`)
         ) {
           headerLeanguageElement.style.backgroundColor = `#FFF`;
           headerLeanguageElement.style.height = ``;
@@ -467,9 +456,9 @@ function load() {
         const bodyElement = document.querySelector(`body`);
         const headerLeanguageElementHeight =
           headerLeanguageElement.offsetHeight;
-        bodyElement.toggleAttribute(`open-burger`);
+        bodyElement.toggleAttribute(`data-open-burger`);
         if (
-          bodyElement.hasAttribute(`open-burger`) &&
+          bodyElement.hasAttribute(`data-open-burger`) &&
           headerLeanguageElement.classList.contains(`open`)
         ) {
           headerLeanguageElement.offsetHeight;
@@ -529,7 +518,6 @@ function load() {
       if (targetElement.closest(`.meeting__button`)) {
         const openButtonElement = targetElement.closest(`.meeting__button`);
         if (openButtonElement) {
-          document.querySelector(`body`).setAttribute(`open-form`, ``);
           const formElement = document.querySelector(`.form-meeting`);
           formElement.style.height = `auto`;
           const heightFormElement = formElement.offsetHeight;
@@ -543,7 +531,6 @@ function load() {
           `.form-meeting__button-close`,
         );
         if (closeButtonElement) {
-          document.querySelector(`body`).removeAttribute(`open-form`);
           const formElement = document.querySelector(`.form-meeting`);
           const heightFormElement = formElement.offsetHeight;
           formElement.offsetHeight;
@@ -554,7 +541,6 @@ function load() {
       if(targetElement.closest(`.preloader__button`)) {
         document.querySelector(`.preloader`).style.display = `none`
         document.documentElement.removeAttribute(`data-hide-content`);
-        document.querySelector(`main`).style.opacity = `1`
       }
     }
   }

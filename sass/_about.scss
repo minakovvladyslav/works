@@ -239,27 +239,7 @@
     font-weight: 500;
   }
 
-  // .partners__body
-
-  &__body {
-    position: relative;
-    display: flex;
-    gap: 0;
-    @media (width < toEm(850)) {
-      overflow-y: auto;
-      pointer-events: none;
-      margin-inline: toRem(-15);
-      padding-inline: toRem(15);
-      margin-bottom: toRem(30);
-      &::-webkit-scrollbar {
-        display: none;
-      }
-    }
-  }
-
-  // .partners__list
-
-  &__list {
+    &__list {
     &:nth-of-type(2) {
       @media (width > toEm(850)) {
         display: none;
@@ -274,12 +254,42 @@
       flex-wrap: nowrap;
       justify-content: unset;
       animation-name: spin;
-      animation-duration: 17s;
+      animation-duration: 10s;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
       padding-right: 1em;
     }
   }
+
+  // .partners__body
+
+  &__body {
+    position: relative;
+    display: flex;
+    gap: 0;
+                touch-action: none;
+            overflow: hidden;
+    @media (width < toEm(850)) {
+      overflow-y: auto;
+      overscroll-behavior: none;
+      margin-inline: toRem(-15);
+      padding-inline: toRem(15);
+      margin-bottom: toRem(30);
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      html:not([data-fls-touch]) &{
+          &:hover{
+            .partners__list {
+              animation-play-state: paused;
+            }
+          }
+        }
+    }
+  }
+
+  // .partners__list
+
 
 
   &__item {
